@@ -7,7 +7,7 @@ export default function Users() {
   const [form, setForm] = useState({ name: "", email: "" });
   const [editId, setEditId] = useState(null);
 
-  const apiURL = `http://localhost:8080/users`;
+  const apiURL = "api/users";
 
   const fetchUsers = () => {
     fetch(apiURL)
